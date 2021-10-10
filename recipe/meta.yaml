@@ -10,7 +10,7 @@ source:
   sha256: 637aa6dc36b53220967e2cb99bcdcd1b6b5948d1f4b65546eba33eed603636f1
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv --no-deps"
   skip: true  # [win]
   {% set mpi_prefix = "mpi_" + mpi %}

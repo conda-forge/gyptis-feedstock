@@ -50,6 +50,8 @@ requirements:
     - nlopt
     - psutil
     - ipython
+    - joblib
+    - loguru
     - {{ mpi }}
     - h5py * {{ mpi_prefix }}_*
 

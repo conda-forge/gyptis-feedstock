@@ -1,6 +1,7 @@
 {% set name = "gyptis" %}
 {% set version = "0.4.1" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -8,6 +9,7 @@ package:
 source:
   url: https://gitlab.com/{{ name }}/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
   sha256: 483ea91d1a6d0c478590ececceb253601a5d9adfaa3099191374a08b82f77b7e
+
 
 build:
   number: 0
@@ -46,6 +48,8 @@ requirements:
     - scipy
     - matplotlib-base
     - nlopt
+    - psutil
+    - ipython
     - {{ mpi }}
     - h5py * {{ mpi_prefix }}_*
 

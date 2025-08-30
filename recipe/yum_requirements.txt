@@ -1,5 +1,4 @@
 mesa-libGLU
-libglu1-mesa
 mesa-libGL
 mesa-dri-drivers
 libselinux

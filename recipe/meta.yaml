@@ -1,5 +1,5 @@
 {% set name = "gyptis" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://gitlab.com/{{ name }}/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
-  sha256: 1d5e3aeadd54f845652cda93770c4263aec7fbc7c72b5bad5520926891e7b868
+  sha256: 5dcdc627d40569fe9ee7c655532d6733f8a4c548ccf2fa114baad8c2eb93b7b9
 
 
 build:

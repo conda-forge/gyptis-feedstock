@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv --no-deps"
   skip: true  # [win]
   {% set mpi_prefix = "mpi_" + mpi %}
@@ -20,13 +20,6 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - {{ cdt('libselinux') }}        # [linux]
-    - {{ cdt('libxcb') }}            # [linux]
-    - {{ cdt('libxau') }}            # [linux]
-    - {{ cdt('libxdamage') }}        # [linux]
-    - {{ cdt('libxxf86vm') }}        # [linux]
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
   host:
     - python
     - pip
@@ -39,12 +32,13 @@ requirements:
     - xorg-libxrender    # [linux]
     - xorg-libx11        # [linux]
     - xorg-libxmu        # [linux]
+    - libgl-devel                    # [linux]
   run:
     - python
     - fenics
     - numpy
     - dolfin-adjoint
-    - gmsh 
+    - gmsh
     - python-gmsh
     - meshio
     - scipy

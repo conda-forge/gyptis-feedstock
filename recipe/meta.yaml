@@ -1,5 +1,5 @@
 {% set name = "gyptis" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://gitlab.com/{{ name }}/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
-  sha256: 5dcdc627d40569fe9ee7c655532d6733f8a4c548ccf2fa114baad8c2eb93b7b9
+  sha256: b7d10b2ebc5d68b8396a6aba0b16cb5126eea636953b59054cc38dca80a42d9c
 
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv --no-deps"
   skip: true  # [win]
   {% set mpi_prefix = "mpi_" + mpi %}

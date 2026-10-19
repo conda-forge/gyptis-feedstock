@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '19'
+- '21'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
@@ -23,7 +23,7 @@ mpich:
 numpy:
 - '2'
 openmpi:
-- '4'
+- '5'
 pin_run_as_build:
   python:
     min_pin: x.x
